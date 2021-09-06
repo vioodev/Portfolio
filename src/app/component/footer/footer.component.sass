@@ -1,11 +1,18 @@
 @import '../../../sass/variable'
 
 mat-toolbar
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: $font
   padding: 50px 5vw
   color: $tertiary
-  background: $white
+  background-color: $white
   border-top: solid 1px lighten($tertiary, 75%)
 
   a
     font-size: $cube * 2.5
     margin: $cube * 3
+
+  .expand
+    flex: 1 1 auto
