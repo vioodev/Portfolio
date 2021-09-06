@@ -7,20 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ContentComponent } from './page/home/content/content.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './page/home/home.component';
 import { ProjectsComponent } from './page/projects/projects.component';
-import {ExtendedModule} from "@angular/flex-layout";
+import { ExtendedModule } from "@angular/flex-layout";
+import { SkillsComponent } from './page/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent,
     FooterComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
