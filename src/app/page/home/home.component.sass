@@ -16,23 +16,25 @@
     align-items: center
     justify-content: center
     text-align: center
-    margin-top: 275px
+    margin-top: 200px
     width: 100%
 
     a
       font-size: $cube * 3
-      color: $white
-      background-color: $primary
+      color: $tertiary
+      background-color: $white
       width: 200px
       padding: 5px
+      margin-bottom: 50px
       border-radius: 5px
     a:hover
       transition: all 600ms ease
-      color: $tertiary
-      background-color: $white
+      color: $white
+      background-color: $primary
 
   .element
-    padding: 2vw 20vw 1vw
+    padding: 0 3vw 2vw
+    margin: 0 20vw 20px
 
   .wave-container
     aspect-ratio: 960/540
@@ -40,17 +42,6 @@
     background-repeat: no-repeat
     background-position: center
     background-size: cover
-  @media (max-width: 1000px)
-    .wave-container
-      min-height: 600px
-    .button
-      margin-top: 200px
-  @media (max-width: 705px)
-    .wave-container
-      min-height: 800px
-  @media (max-width: 425px)
-    .wave-container
-      min-height: 900px
 
   .wave
     background-image: url("/assets/graphic/wave.svg")
@@ -63,4 +54,23 @@
     font-size: $cube * 2
     margin-top: -30px
 
+  @media (max-width: 1650px)
+    .button a
+      color: $white
+      background-color: $primary
+  @media (max-width: 1000px)
+    .wave-container
+      padding-bottom: 400px
+    .button
+      display: none
+
+  .primary
+    color: $white
+    background-color: $primary
+  .secondary
+    color: $tertiary
+    background-color: $secondary
+  .tertiary
+    color: $secondary
+    background-color: $tertiary
 
