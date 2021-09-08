@@ -8,23 +8,26 @@
 
   .title
     color: $white
-    padding: 0 20vw
-    margin-top: -950px
-    margin-bottom: 300px
+    padding: 8vw 20vw 0
 
   .element
     padding: 0 20vw 50px
 
-  .wave-spacer
+  .wave-container
     aspect-ratio: 960/540
     width: 100%
-    min-height: 1000px
     background-repeat: no-repeat
     background-position: center
     background-size: cover
+  @media (max-width: 1000px)
+    .wave-container
+      min-height: 600px
+  @media (max-width: 730px)
+    .wave-container
+      min-height: 800px
 
   .wave
-    background-image: url("../../../assets/graphic/wave.svg")
+    background-image: url("/assets/graphic/wave.svg")
 
   h1
     font-size: $cube * 7
