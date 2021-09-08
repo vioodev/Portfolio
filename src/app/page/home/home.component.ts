@@ -14,7 +14,11 @@ export class HomeComponent implements OnInit {
 
   scroll(id: string) {
     let element = document.getElementById(id);
-    if (element === null) return;
+    if (element === null) {
+      console.log("Error: Unable to scroll to non-existing element " + id + ".")
+      return;
+    }
     element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    console.log("Success: Scrolled to element " + id + ".")
   }
 }

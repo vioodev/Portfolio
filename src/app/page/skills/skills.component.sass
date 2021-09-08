@@ -8,15 +8,17 @@
   color: $tertiary
 
   .element
-    min-height: 300px
-    width: 55vw
-    margin: 20px
-    padding-left: 30px
-    padding-right: 30px
+    width: 50vw
+    margin: 10px
+    padding: 0 30px 30px 30px
     border-radius: 5px
-    background-color: lighten($tertiary, 75%)
+    background-image: url("/assets/graphic/light-peaks.svg")
 
     h1
       font-size: $cube * 5
     p
       font-size: $cube * 2
+
+  @media (max-width: 1000px)
+    .element
+      width: 75vw

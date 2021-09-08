@@ -33,8 +33,12 @@
       background-color: $primary
 
   .element
-    padding: 0 3vw 2vw
-    margin: 0 20vw 20px
+    width: 50vw
+    margin: 10px
+    padding: 0 30px 30px 30px
+    border-radius: 5px
+    color: $white
+    background-image: url("/assets/graphic/dark-wave.svg")
 
   .wave-container
     aspect-ratio: 960/540
@@ -44,7 +48,7 @@
     background-size: cover
 
   .wave
-    background-image: url("/assets/graphic/wave.svg")
+    background-image: url("/assets/graphic/header-wave.svg")
 
   h1
     font-size: $cube * 7
@@ -58,19 +62,15 @@
     .button a
       color: $white
       background-color: $primary
+    .button a:hover
+      transition: all 600ms ease
+      color: $tertiary
+      background-color: $white
   @media (max-width: 1000px)
     .wave-container
       padding-bottom: 400px
     .button
       display: none
-
-  .primary
-    color: $white
-    background-color: $primary
-  .secondary
-    color: $tertiary
-    background-color: $secondary
-  .tertiary
-    color: $secondary
-    background-color: $tertiary
+    .element
+      width: 75vw
 
