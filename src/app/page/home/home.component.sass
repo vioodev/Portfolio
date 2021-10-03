@@ -7,41 +7,44 @@
   color: $tertiary
   padding-bottom: 5vw
 
+  #anchor
+    padding: 50px 20vw 0
+
   .title
-    color: $white
-    padding: 8vw 20vw 0
+    padding: 8vw 20vw 8vw
 
   .button
     display: flex
     align-items: center
     justify-content: center
     text-align: center
-    margin-top: 200px
+    margin: 200px 0 0
     width: 100%
 
     a
+      transition: all 500ms ease
       font-size: $cube * 3
-      color: $tertiary
-      background-color: $white
+      color: $white
+      background-color: $primary
       width: 200px
       padding: 5px
       margin-bottom: 50px
       border-radius: 5px
     a:hover
-      transition: all 600ms ease
-      color: $white
-      background-color: $primary
+      transform: translate(-10px, -10px)
 
   .element
+    transition: all 500ms ease
     width: 50vw
-    margin: 10px
+    margin: 20px
     padding: 0 30px 30px 30px
     border-radius: 5px
     color: $white
     background-image: url("/assets/graphic/dark-wave.svg")
+    &:hover
+      transform: translate(-10px, -10px)
 
   .wave-container
-    aspect-ratio: 960/540
     width: 100%
     background-repeat: no-repeat
     background-position: center
@@ -63,7 +66,7 @@
       color: $white
       background-color: $primary
     .button a:hover
-      transition: all 600ms ease
+      transition: all 500ms ease
       color: $tertiary
       background-color: $white
   @media (max-width: 1000px)
@@ -72,5 +75,5 @@
     .button
       display: none
     .element
-      width: 75vw
+      min-width: 80vw
 

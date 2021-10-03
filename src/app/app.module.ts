@@ -9,9 +9,13 @@ import { HeaderComponent } from './component/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './page/home/home.component';
-import { ProjectsComponent } from './page/projects/projects.component';
+import { WorkComponent } from './page/work/work.component';
 import { ExtendedModule } from "@angular/flex-layout";
 import { SkillsComponent } from './page/skills/skills.component';
+import { ContactComponent } from './page/contact/contact.component';
+import {MatMenuModule} from "@angular/material/menu";
+import {MatButtonModule} from "@angular/material/button";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -19,15 +23,19 @@ import { SkillsComponent } from './page/skills/skills.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ProjectsComponent,
-    SkillsComponent
+    WorkComponent,
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    ExtendedModule
+    ExtendedModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   exports: [RouterModule],
   providers: [],

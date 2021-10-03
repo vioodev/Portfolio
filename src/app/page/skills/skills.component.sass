@@ -4,21 +4,48 @@
   display: flex
   flex-direction: column
   align-items: center
-  margin: 60px
   color: $tertiary
 
+  #svg-container
+    display: flex
+    flex-direction: row
+    flex-flow: wrap
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 1vw 10vw 5vw
+
+    svg
+      transition: all 500ms ease
+      width: 100px
+      height: 100px
+      margin: 2vw 1vw 1vw
+      &:hover
+        transform: translate(0, -15px)
+
+  .title
+    padding: 50px 20vw 0
+    .subtitle
+      margin-top: -20px
+
   .element
+    transition: all 500ms ease
     width: 50vw
-    margin: 10px
+    margin: 20px
     padding: 0 30px 30px 30px
     border-radius: 5px
     background-image: url("/assets/graphic/light-peaks.svg")
+    &:hover
+      transform: translate(-10px, -10px)
 
-    h1
-      font-size: $cube * 5
-    p
-      font-size: $cube * 2
+  h1
+    font-size: $cube * 5
+  p
+    font-size: $cube * 2
 
   @media (max-width: 1000px)
     .element
       width: 75vw
+    #svg-container
+      svg
+        margin: 5vw 6vw 5vw

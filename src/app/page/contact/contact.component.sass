@@ -1,0 +1,80 @@
+@import '/src/sass/variable'
+
+#container
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 5vw
+  color: $tertiary
+
+  .title
+    padding: 50px 20vw 0
+
+  .contact-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    span
+      padding: 0 20vw 0
+      font-size: $cube * 2.5
+      margin-top: -5px
+      margin-bottom: 10px
+    .element
+      display: flex
+      flex-flow: wrap
+      align-items: center
+      justify-content: center
+      width: 100%
+      padding: 1vw 10vw 0
+      a
+        transition: all 500ms ease
+        font-size: $cube * 3
+        color: $tertiary
+        background-image: url("/assets/graphic/light-peaks.svg")
+        margin: 10px
+        padding: 15px
+        border-radius: 10px
+        text-decoration: none
+        &:hover
+          transform: translate(0, -15px)
+      svg
+        transition: all 500ms ease
+        height: 100px
+        width: 100px
+        margin: 1vw 2vw 1vw
+        &:hover
+          transform: translate(0, -15px)
+
+  .social-container
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+    width: 100%
+    padding: 1vw 10vw 0
+    svg
+      transition: all 500ms ease
+      height: 100px
+      width: 100px
+      margin: 1vw 2vw 1vw
+      &:hover
+        transform: translate(0, -15px)
+
+  h1
+    font-size: $cube * 5
+
+  @media (max-width: 650px)
+    .contact-container .element
+      a
+        font-size: $cube * 2.5
+      svg
+        margin: 5vw 5vw 7.5vw
+    .social-container
+      svg
+        margin: 4vw 6.5vw 4vw
+  @media (max-width: 500px)
+    .contact-container .element
+      a
+        font-size: $cube * 2
+    .social-container
+      svg
+        margin: 10vw 7.5vw 10vw

@@ -1,8 +1,29 @@
 <mat-toolbar>
   <a routerLink="/" routerLinkActive="active"><span class="larger">home</span></a>
+  <a routerLink="/skills" routerLinkActive="active" fxShow="true" fxHide.lt-sm="true">skills</a>
+  <a routerLink="/work" routerLinkActive="active" fxShow="true" fxHide.lt-sm="true">work</a>
+  <a routerLink="/contact" routerLinkActive="active" fxShow="true" fxHide.lt-sm="true">contact</a>
 
-  <span class="expand"></span>
+  <!-- Hamburger Menu Stuff -->
+  <span class="expand" fxShow="false" fxShow.lt-sm="true"></span>
 
-  <a routerLink="/skills" routerLinkActive="active">skills</a>
-  <a routerLink="/projects" routerLinkActive="active">projects</a>
+  <button [matMenuTriggerFor]="menu" fxShow="false" fxShow.lt-sm="true">
+    <label>
+      <span id="top"></span>
+      <span id="middle"></span>
+      <span id="bottom"></span>
+    </label>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <a routerLink="/skills" routerLinkActive="active" style="color: rgb(20, 15, 60)">skills</a>
+    </button>
+    <button mat-menu-item>
+      <a routerLink="/work" routerLinkActive="active" style="color: rgb(20, 15, 60)">work</a>
+    </button>
+    <button mat-menu-item>
+      <a routerLink="/contact" routerLinkActive="active" style="color: rgb(20, 15, 60)">contact</a>
+    </button>
+  </mat-menu>
 </mat-toolbar>

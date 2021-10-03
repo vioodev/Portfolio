@@ -1,0 +1,30 @@
+@import '/src/sass/variable'
+
+#container
+  display: flex
+  flex-direction: column
+  align-items: center
+  color: $white
+  padding-bottom: 5vw
+
+  .title
+    padding: 50px 20vw 0
+
+  .element
+    transition: all 500ms ease
+    width: 50vw
+    margin: 20px
+    padding: 0 30px 30px 30px
+    border-radius: 5px
+    background-image: url("/assets/graphic/dark-steps.svg")
+    &:hover
+      transform: translate(-10px, -10px)
+
+  h1
+    font-size: $cube * 5
+  p
+    font-size: $cube * 2
+
+  @media (max-width: 1000px)
+    .element
+      width: 75vw
